@@ -20,7 +20,7 @@ func main() {
 	bodyString := string(bodyBytes)
 
 	fmt.Println(bodyString)
-	fmt.Printf("StatusCode: %s\n", response.Status)
+	fmt.Printf("StatusCode: %d\n", response.StatusCode)
 	fmt.Printf("Headers: %s\n", response.Header)
 
 	fmt.Printf("Header: Content Type - %s", response.Header["Content-Type"])
